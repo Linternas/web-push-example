@@ -18,5 +18,5 @@ self.addEventListener('push', () => {
     ]
   }
 
-  e.waituntil(self.registration.showNotification('Hello world', options))
+  e.waituntil(self.registration.showNotification('Hello world', option))
 })
