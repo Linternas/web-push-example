@@ -1,4 +1,4 @@
-self.addEventListener('push', () => {
+self.addEventListener('push', (e) => {
   // self.registration.sendNotification('test message', {})
 
   var option = {
