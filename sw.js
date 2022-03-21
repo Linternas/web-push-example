@@ -1,5 +1,8 @@
 self.addEventListener('push', function (event) {
 
+  console.log(event)
+  console.log(event.data.text())
+
   const payload = JSON.parse(event.data.text());
   event.waitUntil(
     self.registration.showNotification(payload.title, {
@@ -8,7 +11,7 @@ self.addEventListener('push', function (event) {
     })
   );
 
-  // // self.registration.sendNotification('test message', {})
+  // self.registration.sendNotification('test message', {})
 
   // var option = {
   //   body: 'This notification was generated from a push!',
