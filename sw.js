@@ -10,12 +10,12 @@ self.addEventListener('push', function (event) {
       data: { link: payload.link },
       actions: [
         {
-          actions: 'explore',
+          action: 'explore',
           title: 'Explore this new world',
           icon: 'iamges/checkmark.png'
         },
         {
-          actions: 'close',
+          action: 'close',
           title: 'Close',
           icon: 'images/xmark.png'
         }
