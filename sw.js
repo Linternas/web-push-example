@@ -8,6 +8,18 @@ self.addEventListener('push', function (event) {
     self.registration.showNotification(payload.title, {
       body: payload.body,
       data: { link: payload.link },
+      actions: [
+        {
+          actions: 'explore',
+          title: 'Explore this new world',
+          icon: 'iamges/checkmark.png'
+        },
+        {
+          actions: 'close',
+          title: 'Close',
+          icon: 'images/xmark.png'
+        }
+      ]
     })
   );
 
